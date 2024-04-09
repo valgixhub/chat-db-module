@@ -1,0 +1,25 @@
+{
+  "name": "chat-db-module",
+  "version": "1.0.0",
+  "description": "Valgix Chat DB Module",
+  "main": "src/server.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon -x node --loader ts-node/esm --experimental-specifier-resolution=node src/server.ts",
+    "start": "node dist/server.js",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "dotenv": "^16.4.5",
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.4"
+  },
+  "dependencies": {
+    "mongoose": "^8.3.1",
+    "uWebSockets.js": "github:uNetworking/uWebSockets.js#v20.43.0"
+  }
+}
